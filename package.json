@@ -1,0 +1,26 @@
+{
+  "name": "noderunner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsavitha95/noderunner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "noderunner": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gsavitha95/noderunner/issues"
+  },
+  "homepage": "https://github.com/gsavitha95/noderunner#readme",
+  "dependencies": {
+    "chokidar": "^3.4.0"
+  }
+}
