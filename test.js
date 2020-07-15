@@ -1,3 +1,4 @@
-console.log("hi there!");
-console.log("bye there");
-console.log("whats up?");
+const chalk = require("chalk");
+setInterval(() => {
+  console.log(chalk.yellow("hello !"));
+}, 1000);
