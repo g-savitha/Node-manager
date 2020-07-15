@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/gsavitha95/noderunner#readme",
   "dependencies": {
-    "chokidar": "^3.4.0"
+    "caporal": "^1.4.0",
+    "chokidar": "^3.4.0",
+    "lodash.debounce": "^4.0.8"
   }
 }
