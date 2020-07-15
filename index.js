@@ -5,6 +5,7 @@ const chokidar = require("chokidar");
 const debounce = require("lodash.debounce");
 const program = require("caporal");
 const fs = require("fs");
+const { spawn } = require("child_process");
 
 program
   .version("1.0.0")
@@ -16,8 +17,9 @@ program
     } catch (err) {
       throw new Error(`Couldn't find the file ${name}`);
     }
+    //runs a program inside a program -> using child_process
     const start = debounce(() => {
-      log("Starting the program");
+      spawn("node", [name], { stdio: "inherit" });
     }, 100);
 
     // One-liner to watch over current directory
